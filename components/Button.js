@@ -10,7 +10,7 @@ export default function Button({ label, theme, onPress }) {
         });
 
         if (!result.canceled) {
-            console.log(result);
+            setSelectedImage(result.assets[0].uri);
         } else {
             alert('You did not select any image.');
         }
